@@ -65,3 +65,8 @@ if you get a issue about "SWR " you can try :
 npm i
 
 ```
+
+
+## Relative infos 
+    https://www.youtube.com/watch?v=3mlWO01OWIo
+    
