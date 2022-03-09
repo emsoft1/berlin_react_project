@@ -7,6 +7,12 @@ export default function Scene() {
   useEffect(() => {
     const mountRefCurrent = mountRef.current;
     const scene = new THREE.Scene();
+    const loader = new THREE.TextureLoader();
+
+    scene.background = loader.load(
+      "https://threejs.org/examples/textures/planets/earth_atmos_4096.jpg"
+    );
+
     const camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
