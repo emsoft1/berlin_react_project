@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My first three.js app</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="js/three.js"></script>
+    <script>
+      // create a scene
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        // FOV that is seen on the display at any given moment. The value is in degrees.
+        50,
+        // aspect ratio
+        window.innerWidth / window.innerHeight,
+        // near and far clipping plane
+        // objects further away from the camera than the value of far or closer than near won't be rendered
+        0.1,
+        1000
+      );
+
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // create a cube obj
+      const geometry = new THREE.BoxGeometry();
+      const material = new THREE.MeshBasicMaterial({ color: "#F59530" });
+      const cube = new THREE.Mesh(geometry, material);
+      scene.add(cube);
+
+      // create another obj using Geometry() since BoxGeometry() will soon be romved
+      //   const geometry2 = new THREE.Geometry();
+      //   geometry2.faces.push(
+      //     // front
+      //     new THREE.Face3(0, 3, 2),
+      //     new THREE.Face3(0, 1, 3),
+      //     // right
+      //     new THREE.Face3(1, 7, 3),
+      //     new THREE.Face3(1, 5, 7),
+      //     // back
+      //     new THREE.Face3(5, 6, 7),
+      //     new THREE.Face3(5, 4, 6),
+      //     // left
+      //     new THREE.Face3(4, 2, 6),
+      //     new THREE.Face3(4, 0, 2),
+      //     // top
+      //     new THREE.Face3(2, 7, 6),
+      //     new THREE.Face3(2, 3, 7),
+      //     // bottom
+      //     new THREE.Face3(4, 1, 0),
+      //     new THREE.Face3(4, 5, 1)
+      //   );
+      //   const material2 = new THREE.MeshBasicMaterial({ color: "#F53030" });
+      //   const newObj = new THREE.Mesh(geometry2, material2);
+      //   scene.add(newObj);
+
+      // move camera outside of cube
+      camera.position.x = 3;
+      camera.position.y = 1;
+      camera.position.z = 5;
+
+      // actually render the scene and animate the cube
+      function animate() {
+        requestAnimationFrame(animate);
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script>
+  </body>
+</html>
