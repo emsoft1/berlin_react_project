@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+}
+
+path:hover {
+  stroke:       red;
+  stroke-width: 2px;
+}
