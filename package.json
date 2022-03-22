@@ -1,5 +1,13 @@
 {
+  "name": "react-berlin-project",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "servez -p 8080"
+  },
   "dependencies": {
     "three": "^0.138.3"
+  },
+  "devDependencies": {
+    "servez": "^1.13.4"
   }
 }

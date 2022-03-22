@@ -2,6 +2,41 @@ export default function initSVGObject() {
 
   const obj = {};
 
+  obj.names = [
+    'Moldova',
+    'Romania',
+    'Bulgaria',
+    'Macedonia',
+    'Albania',
+    'Yugoslavia',
+    'Bosnia-Hertegovina',
+    'Croatia',
+    'Slovenia',
+    'Hungary',
+    'Slovakia',
+    'Ukraine',
+    'Poland',
+    'Lithuania',
+    'Lithuania',
+    'Czech-Republic',
+    'Germany',
+    'Austria',
+    'Switzerland',
+    'Italy',
+    'France',
+    'Spain',
+    'Portugal',
+    'Belgium',
+    'Netherlands',
+    'Estonia',
+    'Finland',
+    'Sweden',
+    'Norway',
+    'Ireland',
+    'United-Kingdom',
+    'Iceland'
+  ];
+
   obj.paths = [
     //Moldova
     'M 25.72 22.078 L 25.742 21.933 L 25.966 21.933 L 26.074 21.832 L 26.306 21.843 L 26.552 22.002 L 26.721 22.037' +
