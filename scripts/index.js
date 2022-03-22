@@ -430,13 +430,11 @@ function animate() {
   if (intersects.length > 0) {
 
     country = intersects[0].object.name;
-    console.log( country );
     intersects[0].object.material.color.set(0xff0000);
 
   } else {
 
     let reverseColor = scene.getObjectByName( country );
-    console.log( reverseColor )
     reverseColor.material.color.set(0xbbbbbb);
 
   }
