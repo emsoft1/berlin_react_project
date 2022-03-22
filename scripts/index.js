@@ -311,6 +311,7 @@ const addGeoObject = function (group, svgObject) {
   const depths = svgObject.depths;
   const colors = svgObject.colors;
   const center = svgObject.center;
+  const names = svgObject.names;
 
   for (let i = 0; i < paths.length; i++) {
 
@@ -322,6 +323,7 @@ const addGeoObject = function (group, svgObject) {
     });
     const depth = depths[i];
     const simpleShapes = path.toShapes(true);
+    const name = names[i];
 
     for (let j = 0; j < simpleShapes.length; j++) {
 
@@ -336,6 +338,7 @@ const addGeoObject = function (group, svgObject) {
       mesh.translateZ(- depth - 1);
       mesh.translateX(- center.x);
       mesh.translateY(- center.y);
+      mesh.name = name;
 
       group.add(mesh);
       group.rotation.y = 0.168
@@ -346,6 +349,8 @@ const addGeoObject = function (group, svgObject) {
 };
 
 let renderer, stats, scene, camera;
+let raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
 
 init();
 animate();
@@ -392,7 +397,7 @@ function init() {
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
 
-  window.addEventListener('resize', onWindowResize);
+  window.addEventListener('resize', onWindowResize);  
 }
 
 function onWindowResize() {
@@ -404,7 +409,40 @@ function onWindowResize() {
 
 }
 
+function onPointerMove( event ) {
+
+	pointer.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	pointer.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+}
+
 function animate() {
   requestAnimationFrame(animate);
+
+  // find intersections
+
+  raycaster.setFromCamera( pointer, camera );
+
+  // calculate objects intersecting the picking ray
+	const intersects = raycaster.intersectObjects( scene.children );
+  let country;
+
+  if (intersects.length > 0) {
+
+    country = intersects[0].object.name;
+    console.log( country );
+    intersects[0].object.material.color.set(0xff0000);
+
+  } else {
+
+    let reverseColor = scene.getObjectByName( country );
+    console.log( reverseColor )
+    reverseColor.material.color.set(0xbbbbbb);
+
+  }
+
+
   renderer.render(scene, camera);
 }
+
+window.addEventListener( 'pointermove', onPointerMove );
