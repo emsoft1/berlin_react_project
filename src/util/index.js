@@ -1,4 +1,4 @@
-import * as THREE from '../node_modules/three/build/three.module.js'
+import * as THREE from 'three/build/three.module'
 import initSVGObject from './paths.js'
 
 function d3threeD(exports) {
