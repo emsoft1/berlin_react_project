@@ -307,10 +307,11 @@ d3threeD($d3g);
 
 const addGeoObject = function (group, svgObject) {
 
-  const paths = svgObject.paths;
-  const depths = svgObject.depths;
-  const colors = svgObject.colors;
-  const center = svgObject.center;
+  const countries = svgObject.countries;
+  // const paths = svgObject.paths;
+  // const depths = svgObject.depths;
+  // const colors = svgObject.colors;
+  const center = svgObject.mapCenter;
 
   for (let i = 0; i < paths.length; i++) {
 
