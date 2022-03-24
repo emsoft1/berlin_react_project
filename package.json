@@ -1,3 +1,5 @@
+    "servez": "^1.13.4"
+  "devDependencies": {
 {
   "name": "myapp",
   "version": "0.1.0",
