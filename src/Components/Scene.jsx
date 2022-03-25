@@ -14,6 +14,7 @@ export default function Scene() {
   useEffect(() => {
     init();
     animate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function d3threeD(exports) {
@@ -168,7 +169,7 @@ export default function Scene() {
           case "C":
             x1 = eatNum();
             y1 = eatNum();
-
+            break;
           case "S":
             if (activeCmd === "S") {
               x1 = 2 * x - x2;
@@ -187,7 +188,7 @@ export default function Scene() {
           case "c":
             x1 = x + eatNum();
             y1 = y + eatNum();
-
+            break;
           case "s":
             if (activeCmd === "s") {
               x1 = 2 * x - x2;
@@ -207,7 +208,7 @@ export default function Scene() {
           case "Q":
             x1 = eatNum();
             y1 = eatNum();
-
+            break;
           case "T":
             if (activeCmd === "T") {
               x1 = 2 * x - x1;
@@ -224,7 +225,7 @@ export default function Scene() {
           case "q":
             x1 = x + eatNum();
             y1 = y + eatNum();
-
+            break;
           case "t":
             if (activeCmd === "t") {
               x1 = 2 * x - x1;
@@ -388,9 +389,6 @@ export default function Scene() {
   }
 
   function init() {
-    // const container = document.getElementById("container");
-    // const container = document.getElementById("container");
-
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0xb0b0b0);
 
@@ -401,8 +399,6 @@ export default function Scene() {
       1000
     );
     camera.position.set(0, 0, 40);
-
-    //
 
     const group = new THREE.Group();
     scene.add(group);
