@@ -307,21 +307,19 @@ d3threeD($d3g);
 
 const addGeoObject = function (group, svgObject) {
 
-  const countries = svgObject.countries;
-  // const paths = svgObject.paths;
-  // const depths = svgObject.depths;
-  // const colors = svgObject.colors;
-  const center = svgObject.mapCenter;
+  const countries = svgObject.countries
+  const center = svgObject.mapCenter
+  const length = countries.length
 
-  for (let i = 0; i < paths.length; i++) {
-
-    const path = $d3g.transformSVGPath(paths[i]);
-    const color = new THREE.Color(colors[i]);
+  for (let i = 0; i < length; i++) {
+    const paths = countries[i].paths
+    const path = $d3g.transformSVGPath(paths.join(""))
+    const color = new THREE.Color(countries[i].color)
     const material = new THREE.MeshLambertMaterial({
       color: color,
       emissive: color
     });
-    const depth = depths[i];
+    const depth = countries[i].depths;
     const simpleShapes = path.toShapes(true);
 
     for (let j = 0; j < simpleShapes.length; j++) {
@@ -341,12 +339,12 @@ const addGeoObject = function (group, svgObject) {
       group.add(mesh);
       group.rotation.y = 0.168
     }
-
   }
-
 };
 
 let renderer, stats, scene, camera;
+let raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
 
 init();
 animate();
