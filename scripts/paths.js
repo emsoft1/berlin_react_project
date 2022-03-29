@@ -1,6 +1,6 @@
 export default function initSVGObject() {
 
-  const  moldova = {
+  const countries ={  moldova : {
         name: 'Moldova',
         paths: [
           'M 25.72 22.078 L 25.742 21.933 L 25.966 21.933 L 26.074 21.832 L 26.306 21.843 L 26.552 22.002 L 26.721 22.037' +
@@ -13,7 +13,7 @@ export default function initSVGObject() {
         color: 0x006000,
         depths: 2.5
       },
-       romania = {
+       romania : {
         name: 'Romania',
         paths: [
           'M 22.121 24.397 L 22.633 24.176 L 22.729 23.879 L 22.8 23.801 L 22.878 23.515 L 23.015 23.337 L 23.056 23.122' +
@@ -29,7 +29,7 @@ export default function initSVGObject() {
         color: 0xC07000,
         depths: 3
       },
-      bulgaria = {
+      bulgaria : {
         name: 'Bulgaria',
         paths: [
           'M 23.775 26.007 L 23.94 26.057 L 23.892 26.2 L 23.988 26.289 L 25.53 26.271 L 25.757 26.2 L 26.376 25.747 ' +
@@ -43,7 +43,7 @@ export default function initSVGObject() {
         color: 0xC08040,
         depths: 3
       },
-      macedonia = {
+      macedonia : {
         name: 'Macedonia',
         paths: [
           'M 22.602 27.989 L 22.68 27.989 L 22.728 27.816 L 22.942 27.774 L 23.025 27.858 L 23.115 27.727 L 23.335 27.739' +
@@ -53,7 +53,7 @@ export default function initSVGObject() {
         color: 0xA050C0,
         depths: 2.5
       },
-      albania = {
+      albania : {
         name: 'Albania',
         paths: [
           'M 21.789 28.227 L 21.789 28.102 L 21.831 28.043 L 21.831 27.733 L 21.962 27.626 L 21.968 27.525 L 22.075 27.59' +
@@ -65,7 +65,7 @@ export default function initSVGObject() {
         color: 0xE090C0,
         depths: 2.3
       },
-      yugoslavia = {
+      yugoslavia : {
         name: 'Yugoslavia',
         paths: [
           'M 21.18 27.699 L 21.171 27.592 L 21.26 27.512 L 21.162 27.383 L 21.198 27.146 L 21.296 27.155 L 21.296 26.95' +
@@ -82,7 +82,7 @@ export default function initSVGObject() {
         color: 0xC0A040,
         depths: 3
       },
-      bosnia = {
+      bosnia : {
         name: 'Bosnia & Hertegovina',
         paths: [
           'M 19.419 25.246 L 19.525 25.187 L 19.75 25.463 L 19.887 25.222 L 20.064 25.247 L 20.133 25.149 L 20.25 25.296' +
@@ -99,7 +99,7 @@ export default function initSVGObject() {
         color: 0xC06040,
         depths: 3.2
       },
-      croatia = {
+      croatia : {
         name: 'Croatia',
         paths: [
           'M 18.04 25.1 L 18.551 25.119 L 18.648 24.952 L 18.792 25.165 L 18.88 25.105 L 19.001 25.249 L 19.099 25.212 L 19.089 25.04' +
@@ -126,7 +126,7 @@ export default function initSVGObject() {
         color: 0xC08080,
         depths: 2.9
       },
-      slovenia = {
+      slovenia : {
         name: 'Slovenia',
         paths: [
           'M 18.112 24.167 L 18.481 24.198 L 18.608 24.217 L 18.711 24.156 L 18.749 24.068 L 18.987 23.987 L 19.155 24.048 L 19.216 23.937' +
@@ -141,7 +141,7 @@ export default function initSVGObject() {
         color: 0x907090,
         depths: 2.6
       },
-      hungary = {
+      hungary : {
         name: 'Hungary',
         paths: [
           'M 19.579 23.807 L 19.694 23.693 L 19.801 23.696 L 19.79 23.432 L 19.897 23.256 L 19.797 23.164 L 19.84 23.076 L 20.15 23.069' +
@@ -155,7 +155,7 @@ export default function initSVGObject() {
         color: 0x60E040,
         depths: 2.7
       },
-      slovakia = {
+      slovakia : {
         name: 'Slovakia',
         paths: [
           'M 20.02 22.364 L 20.121 22.156 L 20.211 22.129 L 20.282 22.179 L 20.419 22.164 L 20.555 22.049 L 20.557 21.975 L 20.673 21.955 L 20.7 21.846' +
@@ -168,7 +168,7 @@ export default function initSVGObject() {
         color: 0xC070C0,
         depths: 2.5
       },
-      ukraine = {
+      ukraine : {
         name: 'Ukraine',
         paths: [
           'M 23.154 21.659 L 23.35 21.646 L 23.31 21.477 L 23.35 21.161 L 23.512 20.781 L 23.739 20.563 L 23.949 20.353 L 23.941 20.158 L 23.876 20.07' +
@@ -201,7 +201,7 @@ export default function initSVGObject() {
         color: 0x000060,
         depths: 3.2
       },
-      poland = {
+      poland : {
         name: 'Poland',
         paths: [
           'M 18.552 17.615 L 19.005 17.364 L 19.142 17.381 L 19.466 17.251 L 19.773 16.96 L 20.061 16.829 L 20.428 16.75 L 20.699 16.749 L 20.848 16.831' +
@@ -217,7 +217,7 @@ export default function initSVGObject() {
         color: 0x0000A5,
         depths: 3
       },
-      lithuania = {
+      lithuania : {
         name: 'Lithuania',
         paths: [
           'M 21.872 15.566 L 22.025 15.527 L 22.057 15.414 L 22.368 15.207 L 22.614 15.183 L 22.668 15.218 L 23.012 15.154 L 23.286 15.18 L 23.514 15.213' +
@@ -230,7 +230,7 @@ export default function initSVGObject() {
         color: 0x500005,
         depths: 2.8
       },
-      latvia = {
+      latvia : {
         name: 'Latvia',
         paths: [
           'M 22.442 14.07 L 22.551 14.198 L 22.716 14.326 L 22.73 14.389 L 22.813 14.425 L 22.843 14.551 L 22.99 14.649 L 23.129 14.645 L 23.27 14.557' +
@@ -244,7 +244,7 @@ export default function initSVGObject() {
         color: 0x504545,
         depths: 2.8
       },
-      czech = {
+      czech : {
         name: 'Czech Republic',
         paths: [
           'M 17.237 20.741 L 17.378 20.879 L 17.466 20.731 L 17.998 20.504 L 18.03 20.408 L 18.419 20.293 L 18.477 20.055 L 18.572 20.074 L 18.716 20.319' +
@@ -258,7 +258,7 @@ export default function initSVGObject() {
         color: 0x505050,
         depths: 2.6
       },
-      germany = {
+      germany : {
         name: 'Germany',
         paths: [
           'M 14.791 17.976 L 14.965 17.971 L 14.939 17.899 L 14.792 17.809 L 14.918 17.626 L 15.213 17.624 L 15.325 17.662 L 15.351 17.892 L 15.42 17.874' +
@@ -281,7 +281,7 @@ export default function initSVGObject() {
         color: 0x50A050,
         depths: 3.3
       },
-      austria = {
+      austria : {
         name: 'Austria',
         paths: [
           'M 15.641 23.182 L 15.882 23.14 L 16.028 23.312 L 16.165 23.312 L 16.268 23.163 L 16.444 23.201 L 16.559 23.293 L 16.712 23.289 L 16.854 23.178' +
@@ -296,7 +296,7 @@ export default function initSVGObject() {
         color: 0xA05050,
         depths: 2.7
       },
-      switerland = {
+      switerland : {
         name: 'Switzerland',
         paths: [
           'M 14.169 23.024 L 14.355 23.07 L 14.511 22.973 L 14.566 23.055 L 15.282 23.016 L 15.441 23.052 L 15.633 23.17 L 15.74 23.281 L 15.676 23.328' +
@@ -309,7 +309,7 @@ export default function initSVGObject() {
         color: 0x5050A0,
         depths: 2.5
       },
-      italy = {
+      italy : {
         name: 'Italy',
         paths: [
           'M 13.914 24.495 L 14.596 24.446 L 14.798 24.147 L 14.93 24.093 L 14.955 24.265 L 15.21 24.559 L 15.475 24.083 L 15.597 24.211 L 15.808 24.206' +
@@ -339,7 +339,7 @@ export default function initSVGObject() {
         color: 0xA050A0,
         depths: 2.8
       },
-      france = {
+      france : {
         name: 'France',
         paths: [
           'M 7.745 21.029 L 7.971 20.981 L 8.395 21 L 8.452 20.925 L 8.697 20.972 L 8.886 21.283 L 9.093 21.245 L 9.188 21.293 L 9.357 21.255 L 9.405 21.34' +
@@ -362,7 +362,7 @@ export default function initSVGObject() {
         color: 0xF0A050,
         depths: 2.6
       },
-      spain = {
+      spain : {
         name: 'Spain',
         paths: [
           'M 3.943 24.868 L 4.203 24.831 L 4.45 24.89 L 4.652 24.645 L 4.925 24.655 L 5.138 24.843 L 5.665 25.051 L 5.971 25.05 L 6.845 25.478 L 7.301 25.545' +
@@ -385,7 +385,7 @@ export default function initSVGObject() {
         color: 0x50A0f0,
         depths: 2.5
       },
-      portugal = {
+      portugal : {
         name: 'Portugal',
         paths: [
           'M 3.841 26.124 L 3.979 26.021 L 4.305 26.004 L 4.269 26.197 L 4.768 26.381 L 4.901 26.336 L 5.266 26.476 L 5.29 26.634 L 5.383 26.793 L 5.182 26.997' +
@@ -397,7 +397,7 @@ export default function initSVGObject() {
         color: 0xF0A0F0,
         depths: 2.2
       },
-      belgium = {
+      belgium : {
         name: 'Belgium',
         paths: [
           'M 12.223 19.559 L 12.624 19.419 L 12.832 19.575 L 13.163 19.446 L 13.426 19.442 L 13.602 19.644 L 13.74 19.672 L 13.78 19.804 L 13.731 19.913' +
@@ -408,7 +408,7 @@ export default function initSVGObject() {
         color: 0x707000,
         depths: 2.4
       },
-      netherlands = {
+      netherlands : {
         name: 'Netherlands',
         paths: [
           'M 12.648 19.428 L 12.767 19.426 L 12.853 19.503 L 13.046 19.434 L 12.882 19.422 L 12.882 19.338 L 12.959 19.304 L 13.087 19.3 L 13.23 19.262' +
@@ -444,7 +444,7 @@ export default function initSVGObject() {
         color: 0x505050,
         depths: 2
       },
-      estonia = {
+      estonia : {
         name: 'Estonia',
         paths: [
           'M 22.722 12.734 L 22.943 12.66 L 22.989 12.571 L 23.091 12.492 L 23.262 12.483 L 23.262 12.423 L 23.355 12.445 L 23.537 12.402 L 23.546 12.276' +
@@ -463,7 +463,7 @@ export default function initSVGObject() {
         color: 0x808000,
         depths: 2.3
       },
-      finland = {
+      finland : {
         name: 'Finland',
         paths: [
           'M 20.667 4.619 L 20.713 4.576 L 20.852 4.592 L 20.794 4.479 L 20.84 4.401 L 21.042 4.507 L 21.207 4.683 L 21.263 4.829 L 21.612 4.873 L 21.797 4.697' +
@@ -482,7 +482,7 @@ export default function initSVGObject() {
         color: 0xA070F0,
         depths: 2.6
       },
-      sweden = {
+      sweden : {
         name: 'Sweden',
         paths: [
           'M 19.924 5.499 L 19.951 5.304 L 19.926 5.191 L 19.973 5.104 L 20.215 5.105 L 20.488 5.184 L 20.563 5.154 L 20.502 5.03 L 20.572 4.815 L 20.517 4.674' +
@@ -516,7 +516,7 @@ export default function initSVGObject() {
         color: 0xA0A0F0,
         depths: 2.8
       },
-      norway = {
+      norway : {
         name: 'Norway',
         paths: [
           'M 14.917 10.198 L 14.998 10.291 L 15.064 10.225 L 15.189 10.214 L 15.249 10.318 L 15.309 10.176 L 15.386 10.1 L 15.451 10.231 L 15.544 10.007' +
@@ -558,7 +558,7 @@ export default function initSVGObject() {
         color: 0x303030,
         depths: 3
       },
-      ireland = {
+      ireland : {
         name: 'Ireland',
         paths: [
           'M 6.512 15.618 L 6.511 15.494 L 6.669 15.361 L 6.891 15.477 L 6.886 15.557 L 6.944 15.541 L 7.077 15.548 L 7.186 15.602 L 7.23 15.482 L 7.412 15.447' +
@@ -574,7 +574,7 @@ export default function initSVGObject() {
         color: 0xA080C0,
         depths: 2
       },
-      uk = {
+      uk : {
         name: 'United Kingdom',
         paths: [
           'M 9.425 13 L 9.663 12.93 L 9.663 12.804 L 9.754 12.664 L 9.81 12.685 L 9.929 12.475 L 10.006 12.419 L 10.132 12.447 L 10.237 12.545 L 10.748 12.559' +
@@ -627,7 +627,7 @@ export default function initSVGObject() {
         color: 0xC08080,
         depths: 3
       },
-      iceland = {
+      iceland : {
         name: 'Iceland',
         paths: [
           'M 5.438 4.739 L 5.612 4.81 L 5.923 4.832 L 6.103 4.979 L 6.179 4.985 L 6.25 4.892 L 6.147 4.881 L 6.005 4.778 L 6.098 4.701 L 6.338 4.707 L 6.354 4.63' +
@@ -646,7 +646,7 @@ export default function initSVGObject() {
         ],
         color: 0x909090,
         depths: 1
-      }
+      }}
 
   const obj = {
     countries: [
