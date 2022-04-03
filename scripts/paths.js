@@ -1,6 +1,4 @@
-export default function initSVGObject() {
-
-  const countries ={  moldova : {
+const countries = {  moldova : {
         name: 'Moldova',
         paths: [
           'M 25.72 22.078 L 25.742 21.933 L 25.966 21.933 L 26.074 21.832 L 26.306 21.843 L 26.552 22.002 L 26.721 22.037' +
@@ -646,17 +644,7 @@ export default function initSVGObject() {
         ],
         color: 0x909090,
         depths: 1
-      }}
-
-  const obj = {
-    countries: [
-     moldova, romania, bulgaria, macedonia, albania, yugoslavia, bosnia, croatia,
-     slovenia, slovakia, hungary, ukraine, poland, lithuania, latvia, czech, 
-     germany, austria, switerland, italy, france, spain, portugal, belgium,
-     netherlands, estonia, finland, sweden, norway, iceland, uk
-    ],
-    mapCenter: { x: 20, y: 18 }
+      }
   }
-
-  return obj
-}
+  
+  export default countries;
