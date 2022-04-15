@@ -7,7 +7,10 @@ import './index.css';
 
 
 createRoot(document.getElementById('root')).render(
-  <Canvas>
+  <Canvas camera={{
+      position:[5, -10, 65],
+      fov: 7
+      }}>
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
     <Suspense fallback={null}>

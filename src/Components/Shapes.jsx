@@ -7,13 +7,15 @@ function Shapes(props) {
     const country = props.country
     const data = useLoader( SVGLoader, country )
     const paths = data.paths;
-    const color = props.color
+    // const color = props.color
     const depth = props.depth
+    let oldColor
 
     const SvgShape = ({ shape, color, index }) => {
         return (
         <mesh
-            scale={[0.1, -0.1, 0.1]}
+          position={[-2.5, 2.5, 5]}
+          scale={[0.2, -0.2, 0.15]}
         >
           <meshLambertMaterial
             attach="material"
@@ -30,9 +32,22 @@ function Shapes(props) {
           ),
         [paths]
       )
+      
+    const colorChange = (object)=>{
+      oldColor = object.material.color.getHex()
+      const parentArr = object.parent.children
+      parentArr.forEach(child => {
+        child.material.color.setHex(0xff0000)
+      });
+    }
+    const revertColor = (object)=>{
+      const parentArr = object.parent.children
+      parentArr.forEach(child => {
+        child.material.color.setHex(oldColor)
+      });
+    }
 
       const [clicked, click] = useState(false);
-      const [hovered, hover] = useState(false);
     return (
         <group
           ref={ref}
@@ -40,11 +55,10 @@ function Shapes(props) {
             <SvgShape key={key} {...props} />
             ))
           }
-          scale={clicked ? 1.1 : 1}
-          color={hovered ? 'hotpink' : color }
+          scale={clicked ? 1.3 : 1}
           onClick={(event) => click(!clicked)}
-          onPointerOver={(event) => hover(true)}
-          onPointerOut={(event) => hover(false)}
+          onPointerOver={(event) => {colorChange(event.object)}}
+          onPointerOut={(event) => {revertColor(event.object)}}
         />
       )
 }
