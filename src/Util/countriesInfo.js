@@ -38,7 +38,7 @@ const
   yugoslavia = {
     name: 'Yugoslavia',
     svg: `./countriesSvgs/Yugoslavia.svg`,
-    color: 0xC0A040,
+    color: 0x50A090,
     depths: 3
   },
   bosnia = {

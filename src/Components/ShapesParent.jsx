@@ -12,6 +12,7 @@ export default function ShapesParrent() {
         color={countries[i].color} 
         depth={countries[i].depths} 
         country={countries[i].svg}
+        name={countries[i].name}
       />)
   }
   return (

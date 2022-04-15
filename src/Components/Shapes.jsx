@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useState } from 'react';
+import React, { useRef, useMemo } from 'react';
 import { useLoader } from '@react-three/fiber'
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
 
@@ -6,8 +6,7 @@ function Shapes(props) {
     const ref = useRef()
     const country = props.country
     const data = useLoader( SVGLoader, country )
-    const paths = data.paths;
-    // const color = props.color
+    const paths = data.paths
     const depth = props.depth
     let oldColor
 
@@ -34,12 +33,15 @@ function Shapes(props) {
       )
       
     const colorChange = (object)=>{
+        console.log(object.parent.name)
+            
       oldColor = object.material.color.getHex()
       const parentArr = object.parent.children
       parentArr.forEach(child => {
-        child.material.color.setHex(0xff0000)
+        child.material.color.setHex(0xff5595)
       });
     }
+
     const revertColor = (object)=>{
       const parentArr = object.parent.children
       parentArr.forEach(child => {
@@ -47,18 +49,34 @@ function Shapes(props) {
       });
     }
 
-      const [clicked, click] = useState(false);
+    const oneClick = (event)=>{
+      const siblings = event.parent.children
+      siblings.forEach(child => {
+        if(child.name && child.name!==event.name && child.clicked){
+          child.scale.set(1,1,1)
+          child.clicked = false
+        }
+      })
+
+      if(event.clicked) event.scale.set(1,1,1)
+      else event.scale.set(1.3,1.3,1.3)
+      event.clicked = !event.clicked
+    }
+
+
     return (
         <group
+          name={props.name}
+          clicked={false}
           ref={ref}
           children={shapes.map((props, key) => (
             <SvgShape key={key} {...props} />
             ))
           }
-          scale={clicked ? 1.3 : 1}
-          onClick={(event) => click(!clicked)}
-          onPointerOver={(event) => {colorChange(event.object)}}
-          onPointerOut={(event) => {revertColor(event.object)}}
+
+          onClick={(event) => oneClick(event.eventObject)}
+          onPointerOver={(event) => colorChange(event.object)}
+          onPointerOut={(event) => revertColor(event.object)}
         />
       )
 }
