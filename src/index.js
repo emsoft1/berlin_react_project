@@ -1,9 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-
-import Countries from './Components/Countries.jsx';
-import Shapes from './Components/Shapes.jsx';
+import ShapesParrent from './Components/ShapesParent';
 
 import './index.css';
 
@@ -13,8 +11,7 @@ createRoot(document.getElementById('root')).render(
     <ambientLight />
     <pointLight position={[10, 10, 10]} />
     <Suspense fallback={null}>
-      <Shapes position={[0, 0, 0]}/>
+    <ShapesParrent />
     </Suspense>
-    
   </Canvas>,
 )
