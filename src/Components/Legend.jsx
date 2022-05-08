@@ -13,8 +13,14 @@ export default function Legend(props) {
       let currentCountry = currentCountryArr[0]
       currentCountry.population? setPopulation(currentCountry.population.toLocaleString("en-US")): setPopulation('Could not find')
       currentCountry.capital? setCapital(currentCountry.capital): setCapital('Could not find')
-    }
+    } 
   }, [props]);
+
+  if( ! props.title ) {
+    return (
+      <div className='legend'></div>
+    )
+  }
 
   return(
     <div className='legend'>

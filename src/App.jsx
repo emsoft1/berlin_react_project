@@ -2,14 +2,12 @@ import React, { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import ShapesParrent from './Components/ShapesParent';
 import Legend from './Components/Legend';
+import Text from './Components/Text';
 import './App.css'
 
 export default function App(){
-  const [title, setTitle] = useState('')
-  const setName=(data)=> {
-    setTitle(data.name)
-    // console.log(data)
-  }
+  const [data, setData] = useState({});
+
   return(
   <React.StrictMode>
     <div className='container'>
@@ -20,10 +18,11 @@ export default function App(){
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
           <Suspense fallback={null}>
-            <ShapesParrent onNewName={setName}/>
-          </Suspense>
+            <Text title={data.name} />
+            <ShapesParrent onNewName={setData}/>
+          </Suspense>          
       </Canvas>
-      <Legend title={title}/>
+      <Legend title={data.name}/>
     </div>
   </React.StrictMode>
   )
