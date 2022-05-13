@@ -1,19 +1,15 @@
 
-let oldColor
-
-const colorChange = (object, props)=>{
-  oldColor = object.material.color.getHex()
+const colorChange = (object)=>{
   const parentArr = object.parent.children
   parentArr.forEach(child => {
     child.material.color.setHex(0xff5595)
   });
-  props.onNameChange(object.parent)
 }
 
-const revertColor = (object)=>{
+const revertColor = (object, color)=>{
   const parentArr = object.parent.children
   parentArr.forEach(child => {
-    child.material.color.setHex(oldColor)
+    child.material.color.setHex(color)
   });
 }
 

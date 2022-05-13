@@ -8,7 +8,6 @@ export default function App(){
   const [title, setTitle] = useState('')
   const setName=(data)=> {
     setTitle(data.name)
-    // console.log(data)
   }
   return(
   <React.StrictMode>

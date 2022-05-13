@@ -6,11 +6,10 @@ import oneClick from '../Util/OnCountryClick'
 
 function Shapes(props) {
     const ref = useRef()
-    const country = props.country
-    const data = useLoader( SVGLoader, country )
+    const data = useLoader( SVGLoader, props.country )
     const paths = data.paths
     const depth = props.depth
-    const SvgShape = ({ shape, color, index }) => {
+    const SvgShape = ({ shape, index }) => {
         return (
         <mesh
           position={[-3.5, 3, 5]}
@@ -18,7 +17,7 @@ function Shapes(props) {
         >
           <meshLambertMaterial
             attach="material"
-            color={color}
+            color={props.color}
           />
           <extrudeBufferGeometry attach="geometry" args={[shape, { bevelEnabled: false, depth: depth }]}/>
         </mesh>
@@ -32,7 +31,6 @@ function Shapes(props) {
         [paths]
       )
 
-
     return (
         <group
           name={props.name}
@@ -43,9 +41,9 @@ function Shapes(props) {
             ))
           }
 
-          onClick={(event) => oneClick(event.eventObject)}
-          onPointerOver={(event) => colorChange(event.object, props)}
-          onPointerOut={(event) => revertColor(event.object)}
+          onClick={(event) => oneClick(event.eventObject, props)}
+          onPointerOver={(event) => colorChange(event.object)}
+          onPointerOut={(event) => revertColor(event.object, props.color)}
         />
       )
 }

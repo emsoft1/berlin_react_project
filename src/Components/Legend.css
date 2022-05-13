@@ -4,3 +4,7 @@
   padding: 1rem;
   border: 0.5rem solid lightcyan;
 }
+img {
+  width: 200px;
+  height: 100px;
+}
