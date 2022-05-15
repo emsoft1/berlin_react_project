@@ -307,7 +307,7 @@ const
     population: 5_011_500,
     capital: 'Dublin',
     euMember: true,
-    flag: `./flags/Flag_of_Iceland.svg`
+    flag: `./flags/Flag_of_Ireland.svg`
   },
   uk = {
     name: 'United Kingdom',

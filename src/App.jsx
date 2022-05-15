@@ -22,7 +22,7 @@ export default function App(){
             <ShapesParrent onNewName={setName}/>
           </Suspense>
       </Canvas>
-      <Legend title={title}/>
+      {title?<Legend title={title}/>:null}
     </div>
   </React.StrictMode>
   )

@@ -20,10 +20,12 @@ export default function Legend(props) {
   
   return(
     <div className='legend'>
-      {flag? <img src={flag} alt='Flag of the country'></img> : null}
+      <div id='flag'>
+        {flag? <img src={flag} alt='Flag of the country'></img> : null}
+      </div>
       <h1>{props.title}</h1>
-      <p>Capital: {capital}</p>
-      <p>Population: {population}</p>
+      <p>Capital: <span>{capital}</span></p>
+      <p>Population: <span>{population}</span></p>
     </div>
   )
 }

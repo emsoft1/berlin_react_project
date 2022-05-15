@@ -1,10 +1,33 @@
 .legend {
-  width: 40%;
-  background-color: wheat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgb(55, 65, 85);
+  color: beige;
   padding: 1rem;
-  border: 0.5rem solid lightcyan;
+  border: 1px outset ;
+  border-radius: 10px;
+  box-shadow: 2px 5px 11px rgba(21, 17, 45, 0.524);
+  min-width: 305px;
 }
+
+#flag {
+  text-align: center;
+  width: 100%;
+}
+
 img {
-  width: 200px;
+  position: relative;
+  box-shadow: 2px 5px 8px rgba(41, 24, 24, 0.524);
   height: 100px;
+  border-radius: 5px;
+}
+
+h1, span {
+  color: azure;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
 }
