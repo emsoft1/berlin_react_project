@@ -16,6 +16,11 @@
   width: 100%;
 }
 
+#euMemberFlag {
+  width: 75px;
+  height: 50px;
+}
+
 img {
   position: relative;
   box-shadow: 2px 5px 8px rgba(41, 24, 24, 0.524);

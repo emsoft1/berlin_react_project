@@ -127,7 +127,8 @@ const
     population: 41_167_336,
     capital: 'Kyiv',
     euMember: false,
-    flag: `./flags/Flag_of_Ukraine.svg`
+    flag: `./flags/Flag_of_Ukraine.svg`,
+    code: 'UKR'
   },
   poland = {
     name: 'Poland',
@@ -137,7 +138,8 @@ const
     population: 38_179_800,
     capital: 'Warsaw',
     euMember: true,
-    flag: `./flags/Flag_of_Poland.svg`
+    flag: `./flags/Flag_of_Poland.svg`,
+    code: 'POL'
   },
   lithuania = {
     name: 'Lithuania',
@@ -277,7 +279,8 @@ const
     population: 5_536_146,
     capital: 'Helsinki',
     euMember: true,
-    flag: `./flags/Flag_of_Finland.svg`
+    flag: `./flags/Flag_of_Finland.svg`,
+    code: 'FIN'
   },
   sweden = {
     name: 'Sweden',

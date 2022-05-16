@@ -15,11 +15,8 @@ function Shapes(props) {
           position={[-3.5, 3, 5]}
           scale={[0.22, -0.22, 0.15]}
         >
-          <meshLambertMaterial
-            attach="material"
-            color={props.color}
-          />
           <extrudeBufferGeometry attach="geometry" args={[shape, { bevelEnabled: false, depth: depth }]}/>
+          <meshStandardMaterial  attach="material" color={props.color}/>
         </mesh>
     )}
 
