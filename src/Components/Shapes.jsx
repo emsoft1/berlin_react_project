@@ -39,7 +39,7 @@ function Shapes(props) {
           }
 
           onClick={(event) => oneClick(event.eventObject, props)}
-          onPointerOver={(event) => colorChange(event.object)}
+          onPointerOver={(event) => colorChange(event.object, props.isMember)}
           onPointerOut={(event) => revertColor(event.object, props.color)}
         />
       )

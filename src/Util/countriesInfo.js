@@ -7,7 +7,8 @@ const
     population: 5_873_420,
     capital: 'Copenhagen',
     euMember: true,
-    flag: `./flags/Flag_of_Denmark.svg`
+    flag: `./flags/Flag_of_Denmark.svg`,
+    code: 'DEN'
   },
   moldova = {
     name: 'Moldova',
@@ -17,7 +18,8 @@ const
     population: 2_597_100,
     capital: 'Chisinau',
     euMember: false,
-    flag: `./flags/Flag_of_Moldova.svg`
+    flag: `./flags/Flag_of_Moldova.svg`,
+    code: 'MDA'
   },
   romania = {
     name: 'Romania',
@@ -27,7 +29,8 @@ const
     population: 19_186_201,
     capital: 'Bucharest',
     euMember: true,
-    flag: `./flags/Flag_of_Romania.svg`
+    flag: `./flags/Flag_of_Romania.svg`,
+    code: 'ROU'
   },
   bulgaria = {
     name: 'Bulgaria',
@@ -37,7 +40,8 @@ const
     population: 6_863_422,
     capital: 'Sofia',
     euMember: true,
-    flag: `./flags/Flag_of_Bulgaria.svg`
+    flag: `./flags/Flag_of_Bulgaria.svg`,
+    code: 'BUL'
   },
   macedonia = {
     name: 'North Macedonia',
@@ -47,7 +51,8 @@ const
     population: 2_068_979,
     capital: 'Skopje',
     euMember: false,
-    flag: `./flags/Flag_of_North_Macedonia.svg`
+    flag: `./flags/Flag_of_North_Macedonia.svg`,
+    code: 'MKD'
   },
   albania = {
     name: 'Albania',
@@ -57,17 +62,19 @@ const
     population: 2_845_955,
     capital: 'Tirana',
     euMember: false,
-    flag: `./flags/Flag_of_Albania.svg`
+    flag: `./flags/Flag_of_Albania.svg`,
+    code: 'ALB'
   },
   yugoslavia = {
-    name: 'Yugoslavia',
+    name: 'Serbia',
     svg: `./countriesSvgs/Yugoslavia.svg`,
     color: 0x50A090,
     depths: 3,
     population: 2_845_955,
     capital: 'Belgrade',
     euMember: false,
-    flag: `./flags/Flag_of_Serbia_and_Montenegro.svg`
+    flag: `./flags/Flag_of_Serbia_and_Montenegro.svg`,
+    code: 'SRB'
   },
   bosnia = {
     name: 'Bosnia & Hertegovina',
@@ -77,7 +84,8 @@ const
     population: 3_301_779,
     capital: 'Sarajevo',
     euMember: false,
-    flag: `./flags/Flag_of_Bosnia_and_Herzegovina.svg`
+    flag: `./flags/Flag_of_Bosnia_and_Herzegovina.svg`,
+    code: 'BIH'
   },
   croatia = {
     name: 'Croatia',
@@ -87,7 +95,8 @@ const
     population: 4_109_669,
     capital: 'Zagreb',
     euMember: false,
-    flag: `./flags/Flag_of_Croatia.svg`
+    flag: `./flags/Flag_of_Croatia.svg`,
+    code: 'CRO'
   },
   slovenia = {
     name: 'Slovenia',
@@ -97,7 +106,8 @@ const
     population: 2_086_525,
     capital: 'Ljubljana',
     euMember: false,
-    flag: `./flags/Flag_of_Slovenia.svg`
+    flag: `./flags/Flag_of_Slovenia.svg`,
+    code: 'SLO'
   },
   hungary = {
     name: 'Hungary',
@@ -107,7 +117,8 @@ const
     population: 9_730_000,
     capital: 'Budapest',
     euMember: true,
-    flag: `./flags/Flag_of_Hungary.svg`
+    flag: `./flags/Flag_of_Hungary.svg`,
+    code: 'HUN'
   },
   slovakia = {
     name: 'Slovakia',
@@ -117,7 +128,8 @@ const
     population: 5_449_270,
     capital: 'Bratislava',
     euMember: true,
-    flag: `./flags/Flag_of_Slovakia.svg`
+    flag: `./flags/Flag_of_Slovakia.svg`,
+    code: 'SVK'
   },
   ukraine = {
     name: 'Ukraine',
@@ -149,7 +161,8 @@ const
     population: 2_795_680,
     capital: 'Vilnius',
     euMember: true,
-    flag: `./flags/Flag_of_Lithuania.svg`
+    flag: `./flags/Flag_of_Lithuania.svg`,
+    code: 'LTU'
   },
   latvia = {
     name: 'Latvia',
@@ -159,7 +172,8 @@ const
     population: 1_907_675,
     capital: 'Riga',
     euMember: true,
-    flag: `./flags/Flag_of_Latvia.svg`
+    flag: `./flags/Flag_of_Latvia.svg`,
+    code: 'LAT'
   },
   czech = {
     name: 'Czech Republic',
@@ -169,7 +183,8 @@ const
     population: 10_516_707,
     capital: 'Prague',
     euMember: true,
-    flag: `./flags/Flag_of_the_Czech_Republic.svg`
+    flag: `./flags/Flag_of_the_Czech_Republic.svg`,
+    code: 'CZE'
   },
   germany = {
     name: 'Germany',
@@ -179,7 +194,8 @@ const
     population: 83_190_556,
     capital: 'Berlin',
     euMember: true,
-    flag: `./flags/Flag_of_Germany.svg`
+    flag: `./flags/Flag_of_Germany.svg`,
+    code: 'GER'
   },
   austria = {
     name: 'Austria',
@@ -189,7 +205,8 @@ const
     population: 9_027_999,
     capital: 'Vienna',
     euMember: true,
-    flag: `./flags/Flag_of_Austria.svg`
+    flag: `./flags/Flag_of_Austria.svg`,
+    code: 'AUT'
   },
   switerland = {
     name: 'Switzerland',
@@ -199,7 +216,8 @@ const
     population: 8_570_146,
     capital: 'Bern',
     euMember: true,
-    flag: `./flags/Flag_of_Switzerland.svg`
+    flag: `./flags/Flag_of_Switzerland.svg`,
+    code: 'SUI'
   },
   italy = {
     name: 'Italy',
@@ -209,7 +227,8 @@ const
     population: 60_317_116,
     capital: 'Rome',
     euMember: true,
-    flag: `./flags/Flag_of_Italy.svg`
+    flag: `./flags/Flag_of_Italy.svg`,
+    code: 'ITA'
   },
   france = {
     name: 'France',
@@ -219,7 +238,8 @@ const
     population: 67_413_000,
     capital: 'Paris',
     euMember: true,
-    flag: `./flags/Flag_of_France.svg`
+    flag: `./flags/Flag_of_France.svg`,
+    code: 'FRA'
   },
   spain = {
     name: 'Spain',
@@ -229,7 +249,8 @@ const
     population: 47_450_795,
     capital: 'Madrid',
     euMember: true,
-    flag: `./flags/Flag_of_Spain.svg`
+    flag: `./flags/Flag_of_Spain.svg`,
+    code: 'ESP'
   },
   portugal = {
     name: 'Portugal',
@@ -239,7 +260,8 @@ const
     population: 10_344_802,
     capital: 'Lisbon',
     euMember: true,
-    flag: `./flags/Flag_of_Portugal.svg`
+    flag: `./flags/Flag_of_Portugal.svg`,
+    code: 'POR'
   },
   belgium = {
     name: 'Belgium',
@@ -249,7 +271,8 @@ const
     population: 11_492_641,
     capital: 'Brussels',
     euMember: true,
-    flag: `./flags/Flag_of_Belgium.svg`
+    flag: `./flags/Flag_of_Belgium.svg`,
+    code: 'BEL'
   },
   netherlands = {
     name: 'Netherlands',
@@ -259,7 +282,8 @@ const
     population: 17_718_400,
     capital: 'Amsterdam',
     euMember: true,
-    flag: `./flags/Flag_of_the_Netherlands.svg`
+    flag: `./flags/Flag_of_the_Netherlands.svg`,
+    code: 'NED'
   },
   estonia = {
     name: 'Estonia',
@@ -269,7 +293,8 @@ const
     population: 1_328_439,
     capital: 'Talinn',
     euMember: true,
-    flag: `./flags/Flag_of_Estonia.svg`
+    flag: `./flags/Flag_of_Estonia.svg`,
+    code: 'EST'
   },
   finland = {
     name: 'Finland',
@@ -290,7 +315,8 @@ const
     population: 10_402_070,
     capital: 'Stokholm',
     euMember: true,
-    flag: `./flags/Flag_of_Sweden.svg`
+    flag: `./flags/Flag_of_Sweden.svg`,
+    code: 'SWE'
   },
   norway = {
     name: 'Norway',
@@ -300,7 +326,8 @@ const
     population: 5_425_270,
     capital: 'Oslo',
     euMember: true,
-    flag: `./flags/Flag_of_Norway.svg`
+    flag: `./flags/Flag_of_Norway.svg`,
+    code: 'NOR'
   },
   ireland = {
     name: 'Ireland',
@@ -310,7 +337,8 @@ const
     population: 5_011_500,
     capital: 'Dublin',
     euMember: true,
-    flag: `./flags/Flag_of_Ireland.svg`
+    flag: `./flags/Flag_of_Ireland.svg`,
+    code: 'irl'
   },
   uk = {
     name: 'United Kingdom',
@@ -320,7 +348,8 @@ const
     population: 67_081_000,
     capital: 'London',
     euMember: false,
-    flag: `./flags/Flag_of_the_United_Kingdom.svg`
+    flag: `./flags/Flag_of_the_United_Kingdom.svg`,
+    code: 'GBR'
   },
   iceland = {
     name: 'Iceland',
@@ -330,7 +359,8 @@ const
     population: 371_580,
     capital: 'Reykjavik',
     euMember: false,
-    flag: `./flags/Flag_of_Iceland.svg`
+    flag: `./flags/Flag_of_Iceland.svg`,
+    code: 'ISL'
   }
 
 

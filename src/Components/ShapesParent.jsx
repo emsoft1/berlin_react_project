@@ -16,6 +16,7 @@ export default function ShapesParrent(props) {
         depth={countries[i].population/8_000_000}
         country={countries[i].svg}
         name={countries[i].name}
+        isMember={countries[i].euMember}
         onNameChange={showName}
       />)
   }
