@@ -35,7 +35,7 @@ const
   bulgaria = {
     name: 'Bulgaria',
     svg: `./countriesSvgs/Bulgaria.svg`,
-    color: 0xC08040,
+    color: 0x5080c0,
     depths: 3,
     population: 6_863_422,
     capital: 'Sofia',
@@ -94,7 +94,7 @@ const
     depths: 2.9,
     population: 4_109_669,
     capital: 'Zagreb',
-    euMember: false,
+    euMember: true,
     flag: `./flags/Flag_of_Croatia.svg`,
     code: 'CRO'
   },
@@ -105,7 +105,7 @@ const
     depths: 2.6,
     population: 2_086_525,
     capital: 'Ljubljana',
-    euMember: false,
+    euMember: true,
     flag: `./flags/Flag_of_Slovenia.svg`,
     code: 'SLO'
   },
@@ -215,7 +215,7 @@ const
     depths: 2.5,
     population: 8_570_146,
     capital: 'Bern',
-    euMember: true,
+    euMember: false,
     flag: `./flags/Flag_of_Switzerland.svg`,
     code: 'SUI'
   },
@@ -325,7 +325,7 @@ const
     depths: 3,
     population: 5_425_270,
     capital: 'Oslo',
-    euMember: true,
+    euMember: false,
     flag: `./flags/Flag_of_Norway.svg`,
     code: 'NOR'
   },
@@ -361,13 +361,48 @@ const
     euMember: false,
     flag: `./flags/Flag_of_Iceland.svg`,
     code: 'ISL'
+  },
+  cyprus = {
+    name: 'Cyprus',
+    svg: `./countriesSvgs/Cyprus.svg`,
+    color: 0x909090,
+    depths: 1,
+    population: 1_189_256,
+    capital: 'Nicosia',
+    euMember: true,
+    flag: `./flags/Flag_of_Cyprus.svg`,
+    code: 'CYP'
+  },
+  greece = {
+    name: 'Greece',
+    svg: `./countriesSvgs/Greece.svg`,
+    color: 0xD07070,
+    depths: 1,
+    population: 10_678_632,
+    capital: 'Athens',
+    euMember: true,
+    flag: `./flags/Flag_of_Greece.svg`,
+    code: 'GRE'
+  },
+  montenegro = {
+    name: 'Montenegro',
+    svg: `./countriesSvgs/Montenegro.svg`,
+    color: 0x60D070,
+    depths: 1,
+    population: 620_739,
+    capital: 'Podgorica',
+    euMember: false,
+    flag: `./flags/Flag_of_Montenegro.svg`,
+    code: 'MNE'
   }
+
 
 
 
 const countries = [moldova, romania, bulgaria, macedonia, albania, yugoslavia, bosnia, croatia, slovenia,
   hungary, slovakia, uk, ukraine, poland, lithuania, latvia, czech, germany, austria, sweden, switerland,
-  italy, france, spain, portugal, belgium, netherlands, estonia, finland, norway, ireland, iceland, denmark
+  italy, france, spain, portugal, belgium, netherlands, estonia, finland, norway, ireland, iceland, denmark,
+  cyprus, greece, montenegro
 ]
 
 export default countries;
