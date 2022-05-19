@@ -5,7 +5,7 @@
   background-color: rgb(55, 65, 85);
   color: beige;
   padding: 1rem;
-  border: 1px outset ;
+  border: 1px outset;
   border-radius: 10px;
   box-shadow: 2px 5px 11px rgba(21, 17, 45, 0.524);
   min-width: 305px;
@@ -30,6 +30,7 @@ img {
 
 h1, span {
   color: azure;
+  text-transform: capitalize;
   font-weight: bold;
 }
 

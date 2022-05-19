@@ -1,10 +1,9 @@
 import { useState, useEffect} from 'react'
 import countries from '../Util/countriesInfo.js'
+import LegendAdditionalInfo from './AdditionalInfo.jsx'
 import './Legend.css'
 
 export default function Legend(props) {
-  const [population, setPopulation] = useState('')
-  const [capital, setCapital] = useState('')
   const [flag, setFlag] = useState('')
   const [member, setMember] = useState('')
   const [additionalInfo, setAdditionalInfo] = useState('')
@@ -14,8 +13,6 @@ export default function Legend(props) {
     if(props.title) {
       let currentCountryArr = countries.filter(country=>country.name === props.title)
       let currentCountry = currentCountryArr[0]
-      currentCountry.population? setPopulation(currentCountry.population.toLocaleString("en-US")): setPopulation('Could not find')
-      currentCountry.capital? setCapital(currentCountry.capital): setCapital('Could not find')
       currentCountry.flag? setFlag(currentCountry.flag): setFlag(null)
       currentCountry.euMember? setMember(true): setMember(false)
 
@@ -36,9 +33,7 @@ export default function Legend(props) {
       </div>
       <h1>{props.title}</h1>
       {member? <img src={euMember} alt='Flag of the European Union' id='euMemberFlag'></img> : null}
-      <p>Capital: <span>{capital}</span></p>
-      <p>Population: <span>{population}</span></p>
-      {additionalInfo? <p>Start of the week: <span>{additionalInfo.startOfWeek}</span></p>:null}
+      {additionalInfo? <LegendAdditionalInfo props={additionalInfo}/> : null}
     </div>
   )
 }

@@ -12,7 +12,7 @@ function Shapes(props) {
     const SvgShape = ({ shape, index }) => {
         return (
         <mesh
-          position={[-3.5, 3, 5]}
+          position={[-3.5, 3.5, 5]}
           scale={[0.22, -0.22, 0.15]}
         >
           <extrudeBufferGeometry attach="geometry" args={[shape, { bevelEnabled: false, depth: depth }]}/>

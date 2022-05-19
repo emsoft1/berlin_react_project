@@ -35,7 +35,7 @@ const
   bulgaria = {
     name: 'Bulgaria',
     svg: `./countriesSvgs/Bulgaria.svg`,
-    color: 0x5080c0,
+    color: 0xA080C0,
     depths: 3,
     population: 6_863_422,
     capital: 'Sofia',
@@ -134,7 +134,7 @@ const
   ukraine = {
     name: 'Ukraine',
     svg: `./countriesSvgs/Ukraine.svg`,
-    color: 0x000060,
+    color: 0x5050C0,
     depths: 3.2,
     population: 41_167_336,
     capital: 'Kyiv',
@@ -145,7 +145,7 @@ const
   poland = {
     name: 'Poland',
     svg: `./countriesSvgs/Poland.svg`,
-    color: 0x0000A5,
+    color: 0x4060A5,
     depths: 3,
     population: 38_179_800,
     capital: 'Warsaw',
@@ -156,7 +156,7 @@ const
   lithuania = {
     name: 'Lithuania',
     svg: `./countriesSvgs/Lithuania.svg`,
-    color: 0x500005,
+    color: 0x508005,
     depths: 2.8,
     population: 2_795_680,
     capital: 'Vilnius',
@@ -167,7 +167,7 @@ const
   latvia = {
     name: 'Latvia',
     svg: `./countriesSvgs/Latvia.svg`,
-    color: 0x504545,
+    color: 0xA08585,
     depths: 2.8,
     population: 1_907_675,
     capital: 'Riga',
@@ -178,7 +178,7 @@ const
   czech = {
     name: 'Czech Republic',
     svg: `./countriesSvgs/Czech.svg`,
-    color: 0x505050,
+    color: 0xA09050,
     depths: 2.6,
     population: 10_516_707,
     capital: 'Prague',
@@ -310,7 +310,7 @@ const
   sweden = {
     name: 'Sweden',
     svg: `./countriesSvgs/Sweden.svg`,
-    color: 0xA0A0F0,
+    color: 0x80B0A0,
     depths: 2.8,
     population: 10_402_070,
     capital: 'Stokholm',
@@ -321,7 +321,7 @@ const
   norway = {
     name: 'Norway',
     svg: `./countriesSvgs/Norway.svg`,
-    color: 0x303030,
+    color: 0x8090A0,
     depths: 3,
     population: 5_425_270,
     capital: 'Oslo',
@@ -354,7 +354,7 @@ const
   iceland = {
     name: 'Iceland',
     svg: `./countriesSvgs/Iceland.svg`,
-    color: 0x909090,
+    color: 0xA0A0F0,
     depths: 1,
     population: 371_580,
     capital: 'Reykjavik',
@@ -365,7 +365,7 @@ const
   cyprus = {
     name: 'Cyprus',
     svg: `./countriesSvgs/Cyprus.svg`,
-    color: 0x909090,
+    color: 0xE07000,
     depths: 1,
     population: 1_189_256,
     capital: 'Nicosia',
