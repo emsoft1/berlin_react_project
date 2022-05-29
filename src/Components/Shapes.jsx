@@ -1,4 +1,5 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useMemo } from 'react'
+import { Color } from 'three'
 import { useLoader } from '@react-three/fiber'
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
 import {colorChange, revertColor} from '../Util/HoverFunction'
@@ -6,8 +7,9 @@ import oneClick from '../Util/OnCountryClick'
 
 function Shapes(props) {
     const ref = useRef()
-    const data = useLoader( SVGLoader, props.country )
+    const data = useLoader( SVGLoader, props.shape )
     const paths = data.paths
+    const color = new Color(parseInt( props.color, 16 ))
     const depth = props.depth
     const SvgShape = ({ shape, index }) => {
         return (
@@ -16,10 +18,9 @@ function Shapes(props) {
           scale={[0.22, -0.22, 0.15]}
         >
           <extrudeBufferGeometry attach="geometry" args={[shape, { bevelEnabled: false, depth: depth }]}/>
-          <meshStandardMaterial  attach="material" color={props.color}/>
+          <meshStandardMaterial  attach="material" color={color}/>
         </mesh>
     )}
-
     const shapes = useMemo(
         () =>
           paths.flatMap((path, index) =>

@@ -1,0 +1,12 @@
+.pannel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgb(55, 65, 85);
+  color: beige;
+  padding: 1rem;
+  border: 1px outset;
+  border-radius: 10px;
+  box-shadow: 2px 5px 11px rgba(21, 17, 45, 0.524);
+  min-width: 205px;
+}

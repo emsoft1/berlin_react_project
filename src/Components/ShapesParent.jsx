@@ -1,4 +1,4 @@
-import React from 'react'
+import countries from '../Util/countriesInfo.json'
 import Shapes from './Shapes.jsx'
 
 export default function ShapesParrent(props) {
@@ -6,20 +6,18 @@ export default function ShapesParrent(props) {
   const showName=(data)=> {
     props.onNewName(data)
   }
-  let countries = require('../Util/countriesInfo.js').default
-  const max = countries.length
-  for (let i = 0; i < max; i++) {
+  countries.forEach((country)=> {
       countriesOnMap.push(
         <Shapes 
-        key={i} 
-        color={countries[i].color}
+        key={country.code}
+        color={country.color}
         depth={2}
-        country={countries[i].svg}
-        name={countries[i].name}
-        isMember={countries[i].euMember}
+        shape={country.svg}
+        name={country.name}
+        isMember={country.euMember}
         onNameChange={showName}
       />)
-  }
+  })
   return (
     countriesOnMap
   )

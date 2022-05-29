@@ -1,13 +1,15 @@
 import { useState, useEffect} from 'react'
-import countries from '../Util/countriesInfo.js'
-import LegendAdditionalInfo from './AdditionalInfo.jsx'
+import countries from '../Util/countriesInfo.json'
+import GeneralInfo from './GeneralInfo.jsx'
+import WeatherInfo from './WeatherInfo.jsx'
+import FinanceInfo from './FinanceInfo.jsx'
 import './Legend.css'
 
 export default function Legend(props) {
   const [flag, setFlag] = useState('')
   const [member, setMember] = useState('')
   const [additionalInfo, setAdditionalInfo] = useState('')
-  const euMember = './flags/Flag_of_Europe.svg'
+  const option = props.option//General, Weather, Finance
 
   useEffect(() => {
     if(props.title) {
@@ -24,7 +26,7 @@ export default function Legend(props) {
         })
       } else  setAdditionalInfo('')
     }
-  }, [props]);
+  }, [props])
   
   return(
     <div className='legend'>
@@ -32,8 +34,13 @@ export default function Legend(props) {
         {flag? <img src={flag} alt='Flag of the country'></img> : null}
       </div>
       <h1>{props.title}</h1>
-      {member? <img src={euMember} alt='Flag of the European Union' id='euMemberFlag'></img> : null}
-      {additionalInfo? <LegendAdditionalInfo props={additionalInfo}/> : null}
+      {additionalInfo?
+        option === 'Finance' ?
+          <FinanceInfo info={additionalInfo} member={member}/> : 
+        option === 'Weather' ?
+          <WeatherInfo info={additionalInfo} member={member}/> :
+          <GeneralInfo info={additionalInfo} member={member}/> :
+      null}
     </div>
   )
 }
