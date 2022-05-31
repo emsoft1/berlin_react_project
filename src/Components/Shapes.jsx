@@ -1,9 +1,9 @@
-import React, { useRef, useMemo } from 'react'
-import { Color } from 'three'
-import { useLoader } from '@react-three/fiber'
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
 import {colorChange, revertColor} from '../Util/HoverFunction'
+import { useLoader } from '@react-three/fiber'
+import React, { useRef, useMemo } from 'react'
 import oneClick from '../Util/OnCountryClick'
+import { Color } from 'three'
 
 function Shapes(props) {
     const ref = useRef()

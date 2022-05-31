@@ -6,15 +6,13 @@ import OptionsPannel from './Components/OptionsPannel';
 import './App.css'
 
 export default function App(){
-  const [title, setTitle] = useState('')
-  const [option, setOption] = useState('General')
+  const [title, setTitle] = useState()
+  const [option, setOption] = useState()
+  const [curryInfo, setcInfo] = useState()
+  const [driveInfo, setdInfo] = useState()
+  const [mphChecked, setMph] = useState()
+  const [fahrChecked, setdFahr] = useState()
 
-  const setLegend=(data)=> {
-    setOption(data)
-  }
-  const setName=(data)=> {
-    setTitle(data.name)
-  }
   return(
   <React.StrictMode>
     <div className='container'>
@@ -25,11 +23,18 @@ export default function App(){
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
           <Suspense fallback={null}>
-            <ShapesParrent onNewName={setName}/>
+            <ShapesParrent onNewName={(data)=>{setTitle(data.name)}}/>
           </Suspense>
       </Canvas>
-      <OptionsPannel onOptionsChange={setLegend}/>
-      {title?<Legend title={title} option={option}/>:null}
+      <OptionsPannel onOptionsChange={(o, c, d, m, f)=>{
+        setOption(o)
+        setcInfo(c)
+        setdInfo(d)
+        setMph(m)
+        setdFahr(f)
+      }}/>
+      {title? <Legend title={title} option={option} curryInfo={curryInfo} driveInfo={driveInfo} 
+      mphChecked={mphChecked} fahrChecked={fahrChecked}/>: null}
     </div>
   </React.StrictMode>
   )
