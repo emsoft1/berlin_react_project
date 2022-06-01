@@ -2,7 +2,7 @@ import countries from '../Util/countriesInfo.json'
 import GeneralInfo from './GeneralInfo.jsx'
 import WeatherInfo from './WeatherInfo.jsx'
 import FinanceInfo from './FinanceInfo.jsx'
-import { useState, useEffect} from 'react'
+import { useState, useEffect, useMemo} from 'react'
 import './Legend.css'
 
 export default function Legend(props) {
@@ -16,7 +16,18 @@ export default function Legend(props) {
   const [mphChecked, setMph] = useState(props.mphChecked)
   const [fahrChecked, setdFahr] = useState(props.fahrChecked)
 
-
+  useMemo(()=>{
+    let currentCountryArr = countries.filter(country=>country.name === title)
+    let currentCountry = currentCountryArr[0]
+    currentCountry.flag? setFlag(currentCountry.flag): setFlag(null)
+    currentCountry.euMember? setMember(true): setMember(false)
+    fetch(`https://restcountries.com/v3.1/alpha/${currentCountry.code}`)
+    .then(res=>res.json())
+    .then(json=>{
+      setAdditionalInfo(json[0])
+    })
+  },[title])
+  
   useEffect(() => {
     setTitle(props.title)
     setOption(props.option)
@@ -24,21 +35,7 @@ export default function Legend(props) {
     setdInfo(props.driveInfo)
     setMph(props.mphChecked)
     setdFahr(props.fahrChecked)
-    if(title) {
-      let currentCountryArr = countries.filter(country=>country.name === props.title)
-      let currentCountry = currentCountryArr[0]
-      currentCountry.flag? setFlag(currentCountry.flag): setFlag(null)
-      currentCountry.euMember? setMember(true): setMember(false)
-
-      if(currentCountry.code){
-        fetch(`https://restcountries.com/v3.1/alpha/${currentCountry.code}`)
-        .then(res=>res.json())
-        .then(json=>{
-          setAdditionalInfo(json[0])
-        })
-      } else  setAdditionalInfo('')
-    }
-  }, [props, title])
+  }, [props])
 
   const displayFunc=()=>{
     let additionalDisplay
@@ -59,7 +56,6 @@ export default function Legend(props) {
     return additionalDisplay
   }
   
-
   return(
     <div className='legend'>
       <div id='flag'>
