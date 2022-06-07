@@ -1,0 +1,292 @@
+[
+  {
+    "denmark": {
+      "name": "Denmark",
+      "euMember": true,
+      "color": "0x006000",
+      "svg": "./countriesSvgs/Denmark.svg",
+      "flag": "./flags/Flag_of_Denmark.svg",
+      "code": "DEN"
+    },
+    "moldova": {
+      "name": "Moldova",
+      "euMember": false,
+      "color": "0x006000",
+      "svg": "./countriesSvgs/Moldova.svg",
+      "flag": "./flags/Flag_of_Moldova.svg",
+      "code": "MDA"
+    },
+    "romania": {
+      "name": "Romania",
+      "euMember": true,
+      "color": "0xC07000",
+      "svg": "./countriesSvgs/Romania.svg",
+      "flag": "./flags/Flag_of_Romania.svg",
+      "code": "ROU"
+    },
+    "bulgaria": {
+      "name": "Bulgaria",
+      "euMember": true,
+      "color": "0xA080C0",
+      "svg": "./countriesSvgs/Bulgaria.svg",
+      "flag": "./flags/Flag_of_Bulgaria.svg",
+      "code": "BUL"
+    },
+    "macedonia": {
+      "name": "North Macedonia",
+      "euMember": false,
+      "color": "0xA050C0",
+      "svg": "./countriesSvgs/Macedonia.svg",
+      "flag": "./flags/Flag_of_North_Macedonia.svg",
+      "code": "MKD"
+    },
+    "albania": {
+      "name": "Albania",
+      "euMember": false,
+      "color": "0xE090C0",
+      "svg": "./countriesSvgs/Albania.svg",
+      "flag": "./flags/Flag_of_Albania.svg",
+      "code": "ALB"
+    },
+    "serbia": {
+      "name": "Serbia",
+      "euMember": false,
+      "color": "0x50A090",
+      "svg": "./countriesSvgs/Yugoslavia.svg",
+      "flag": "./flags/Flag_of_Serbia_and_Montenegro.svg",
+      "code": "SRB"
+    },
+    "bosnia": {
+      "name": "Bosnia & Hertegovina",
+      "euMember": false,
+      "color": "0xC06040",
+      "svg": "./countriesSvgs/Bosnia&Hertecovina.svg",
+      "flag": "./flags/Flag_of_Bosnia_and_Herzegovina.svg",
+      "code": "BIH"
+    },
+    "croatia": {
+      "name": "Croatia",
+      "euMember": true,
+      "color": "0xC08080",
+      "svg": "./countriesSvgs/Croatia.svg",
+      "flag": "./flags/Flag_of_Croatia.svg",
+      "code": "CRO"
+    },
+    "slovenia": {
+      "name": "Slovenia",
+      "euMember": true,
+      "color": "0x907090",
+      "svg": "./countriesSvgs/Slovenia.svg",
+      "flag": "./flags/Flag_of_Slovenia.svg",
+      "code": "SLO"
+    },
+    "hungary": {
+      "name": "Hungary",
+      "euMember": true,
+      "color": "0x60E040",
+      "svg": "./countriesSvgs/Hungary.svg",
+      "flag": "./flags/Flag_of_Hungary.svg",
+      "code": "HUN"
+    },
+    "slovakia": {
+      "name": "Slovakia",
+      "euMember": true,
+      "color": "0xC070C0",
+      "svg": "./countriesSvgs/Slovakia.svg",
+      "flag": "./flags/Flag_of_Slovakia.svg",
+      "code": "SVK"
+    },
+    "ukraine": {
+      "name": "Ukraine",
+      "euMember": false,
+      "color": "0x5050C0",
+      "svg": "./countriesSvgs/Ukraine.svg",
+      "flag": "./flags/Flag_of_Ukraine.svg",
+      "code": "UKR"
+    },
+    "poland": {
+      "name": "Poland",
+      "euMember": true,
+      "color": "0x4060A5",
+      "svg": "./countriesSvgs/Poland.svg",
+      "flag": "./flags/Flag_of_Poland.svg",
+      "code": "POL"
+    },
+    "lithuania": {
+      "name": "Lithuania",
+      "euMember": true,
+      "color": "0x508005",
+      "svg": "./countriesSvgs/Lithuania.svg",
+      "flag": "./flags/Flag_of_Lithuania.svg",
+      "code": "LTU"
+    },
+    "latvia": {
+      "name": "Latvia",
+      "euMember": true,
+      "color": "0xA08585",
+      "svg": "./countriesSvgs/Latvia.svg",
+      "flag": "./flags/Flag_of_Latvia.svg",
+      "code": "LAT"
+    },
+    "czech": {
+      "name": "Czech Republic",
+      "euMember": true,
+      "color": "0xA09050",
+      "svg": "./countriesSvgs/Czech.svg",
+      "flag": "./flags/Flag_of_the_Czech_Republic.svg",
+      "code": "CZE"
+    },
+    "germany": {
+      "name": "Germany",
+      "euMember": true,
+      "color": "0x50A050",
+      "svg": "./countriesSvgs/Germany.svg",
+      "flag": "./flags/Flag_of_Germany.svg",
+      "code": "GER"
+    },
+    "austria": {
+      "name": "Austria",
+      "euMember": true,
+      "color": "0xA05050",
+      "svg": "./countriesSvgs/Austria.svg",
+      "flag": "./flags/Flag_of_Austria.svg",
+      "code": "AUT"
+    },
+    "switerland": {
+      "name": "Switzerland",
+      "euMember": false,
+      "color": "0x5050A0",
+      "svg": "./countriesSvgs/Switzerland.svg",
+      "flag": "./flags/Flag_of_Switzerland.svg",
+      "code": "SUI"
+    },
+    "italy": {
+      "name": "Italy",
+      "euMember": true,
+      "color": "0xA050A0",
+      "svg": "./countriesSvgs/Italy.svg",
+      "flag": "./flags/Flag_of_Italy.svg",
+      "code": "ITA"
+    },
+    "france": {
+      "name": "France",
+      "euMember": true,
+      "color": "0xF0A050",
+      "svg": "./countriesSvgs/France.svg",
+      "flag": "./flags/Flag_of_France.svg",
+      "code": "FRA"
+    },
+    "spain": {
+      "name": "Spain",
+      "euMember": true,
+      "color": "0x50A0f0",
+      "svg": "./countriesSvgs/Spain.svg",
+      "flag": "./flags/Flag_of_Spain.svg",
+      "code": "ESP"
+    },
+    "portugal": {
+      "name": "Portugal",
+      "euMember": true,
+      "color": "0xF0A0F0",
+      "svg": "./countriesSvgs/Portugal.svg",
+      "flag": "./flags/Flag_of_Portugal.svg",
+      "code": "POR"
+    },
+    "belgium": {
+      "name": "Belgium",
+      "euMember": true,
+      "color": "0x707000",
+      "svg": "./countriesSvgs/Belgium.svg",
+      "flag": "./flags/Flag_of_Belgium.svg",
+      "code": "BEL"
+    },
+    "netherlands": {
+      "name": "Netherlands",
+      "euMember": true,
+      "color": "0x505050",
+      "svg": "./countriesSvgs/Netherlands.svg",
+      "flag": "./flags/Flag_of_the_Netherlands.svg",
+      "code": "NED"
+    },
+    "estonia": {
+      "name": "Estonia",
+      "euMember": true,
+      "color": "0x808000",
+      "svg": "./countriesSvgs/Estonia.svg",
+      "flag": "./flags/Flag_of_Estonia.svg",
+      "code": "EST"
+    },
+    "finland": {
+      "name": "Finland",
+      "euMember": true,
+      "color": "0xA070F0",
+      "svg": "./countriesSvgs/Finland.svg",
+      "flag": "./flags/Flag_of_Finland.svg",
+      "code": "FIN"
+    },
+    "sweden": {
+      "name": "Sweden",
+      "euMember": true,
+      "color": "0x80B0A0",
+      "svg": "./countriesSvgs/Sweden.svg",
+      "flag": "./flags/Flag_of_Sweden.svg",
+      "code": "SWE"
+    },
+    "norway": {
+      "name": "Norway",
+      "euMember": false,
+      "color": "0x8090A0",
+      "svg": "./countriesSvgs/Norway.svg",
+      "flag": "./flags/Flag_of_Norway.svg",
+      "code": "NOR"
+    },
+    "ireland": {
+      "name": "Ireland",
+      "euMember": true,
+      "color": "0xA080C0",
+      "svg": "./countriesSvgs/Ireland.svg",
+      "flag": "./flags/Flag_of_Ireland.svg",
+      "code": "irl"
+    },
+    "uk": {
+      "name": "United Kingdom",
+      "euMember": false,
+      "color": "0xC08080",
+      "svg": "./countriesSvgs/England.svg",
+      "flag": "./flags/Flag_of_the_United_Kingdom.svg",
+      "code": "GBR"
+    },
+    "iceland": {
+      "name": "Iceland",
+      "euMember": false,
+      "color": "0xA0A0F0",
+      "svg": "./countriesSvgs/Iceland.svg",
+      "flag": "./flags/Flag_of_Iceland.svg",
+      "code": "ISL"
+    },
+    "cyprus": {
+      "name": "Cyprus",
+      "euMember": true,
+      "color": "0xE07000",
+      "svg": "./countriesSvgs/Cyprus.svg",
+      "flag": "./flags/Flag_of_Cyprus.svg",
+      "code": "CYP"
+    },
+    "greece": {
+      "name": "Greece",
+      "euMember": true,
+      "color": "0xD07070",
+      "svg": "./countriesSvgs/Greece.svg",
+      "flag": "./flags/Flag_of_Greece.svg",
+      "code": "GRE"
+    },
+    "montenegro": {
+      "name": "Montenegro",
+      "euMember": false,
+      "color": "0x60D070",
+      "svg": "./countriesSvgs/Montenegro.svg",
+      "flag": "./flags/Flag_of_Montenegro.svg",
+      "code": "MNE"
+    }
+  }
+]
