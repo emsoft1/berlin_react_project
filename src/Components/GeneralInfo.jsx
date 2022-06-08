@@ -1,15 +1,15 @@
 export default function GeneralInfo(props) {
+  const euMember = './flags/Flag_of_Europe.svg'
   const currencyInfo = props.curr
   const driveInfo = props.drive
-  const info = props.info
-  const euMember = './flags/Flag_of_Europe.svg'
   const member = props.member
+  const info = props.info
   const cars = info.car
-  const currency = Object.values(info.currencies)[0]
   const code = info.cioc
+  const capital = info.capital
   const region = info.subregion
   const population = info.population
-  const capital = info.capital
+  const currency = Object.values(info.currencies)[0]
 
   return (
     <>

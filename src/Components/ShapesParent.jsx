@@ -1,10 +1,13 @@
 import countries from '../Util/countriesInfo.json'
 import Shapes from './Shapes.jsx'
+import { useContext } from 'react'
+import { TitleContext } from '../Util/OptionsContextProvider'
 
 export default function ShapesParrent(props) {
+  const {setTitle} = useContext(TitleContext)
   let countriesOnMap = []
-  const showName=(data)=> {
-    props.onNewName(data)
+  const showName = data => {
+    setTitle(data.name)
   }
   countries.forEach((country)=> {
       countriesOnMap.push(

@@ -34,11 +34,11 @@ function Shapes(props) {
           name={props.name}
           clicked={false}
           ref={ref}
-          children={shapes.map((props, key) => (
+          children={
+            shapes.map((props, key) => (
             <SvgShape key={key} {...props} />
             ))
           }
-
           onClick={(event) => oneClick(event.eventObject, props)}
           onPointerOver={(event) => colorChange(event.object, props.isMember)}
           onPointerOut={(event) => revertColor(event.object, props.color)}

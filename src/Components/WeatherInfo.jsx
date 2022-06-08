@@ -1,6 +1,7 @@
 import { celsiusToFahrenheit, kilometersTomiles } from '../Util/convertUnits'
 import { useState, useEffect, useMemo } from "react"
 import weatherCode from '../Util/weatherCodes'
+import fetchFunction from '../Util/fetchFunc'
 
 export default function WeatherInfo(props) {
   const [additionalInfo, setAdditionalInfo] = useState()
@@ -11,12 +12,8 @@ export default function WeatherInfo(props) {
   const capitalLng = props.latlng[1]
   const fetchLink = `https://api.open-meteo.com/v1/forecast?latitude=${capitalLat}&longitude=${capitalLng}&timezone=Europe%2FLondon&current_weather=true`
  
-  useMemo(()=>{
-    fetch(fetchLink)
-      .then(res=>res.json())
-      .then(json=>{
-        setAdditionalInfo(json)
-      })
+  useMemo(async ()=>{
+    setAdditionalInfo(await fetchFunction(fetchLink))
   }, [fetchLink])
 
   useEffect(() => {
