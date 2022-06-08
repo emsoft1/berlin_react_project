@@ -1,18 +1,19 @@
-import { useEffect, useState } from "react"
+import {useStore} from '../Util/useStore'
 import "./OptionsPannel.css"
 
-export default function OptionsPannel(props) {
-  const [option, setOption] = useState('General')
-  const [curryInfo, setcInfo] = useState(true)
-  const [driveInfo, setdInfo] = useState(true)
-  const [mphChecked, setMph] = useState(false)
-  const [fahrChecked, setdFahr] = useState(false)
+export default function OptionsPannel() {
+  const option = useStore((state)=>state.option)
+  const setOption = useStore((state)=>state.setOption)
+  const curryInfo = useStore((state)=>state.curryChecked)
+  const setcInfo = useStore((state)=>state.setCurrency)
+  const driveInfo = useStore((state)=>state.driveChecked)
+  const setdInfo = useStore((state)=>state.setDriveInfo)
+  const mphChecked = useStore((state)=>state.mphChecked)
+  const setMph = useStore((state)=>state.setMphChecked)
+  const fahrChecked = useStore((state)=>state.fahrChecked)
+  const setdFahr = useStore((state)=>state.setFahrChecked)
   let additionalOptions
 
-  useEffect(()=>{
-    props.onOptionsChange(option, curryInfo, driveInfo, mphChecked, fahrChecked)
-  },[option, curryInfo, driveInfo, mphChecked, fahrChecked, props])
-  
   const mainOptions = <div 
     onChange={(v)=>{setOption(v.target.value)}}>
     <label>Options: </label>

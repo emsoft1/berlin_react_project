@@ -9,7 +9,8 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scripts": "5.0.0",
-    "three": "0.139.2"
+    "three": "0.139.2",
+    "zustand": "^4.0.0-rc.1"
   },
   "devDependencies": {
     "servez": "^1.13.4"
