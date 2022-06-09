@@ -1,8 +1,8 @@
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
-import {colorChange, revertColor} from '../Util/HoverFunction'
+import {colorChange, revertColor} from '../Util/hoverFunction'
 import { useLoader } from '@react-three/fiber'
 import React, { useRef, useMemo } from 'react'
-import oneClick from '../Util/OnCountryClick'
+import oneClick from '../Util/onCountryClick'
 import { Color } from 'three'
 
 function Shapes(props) {
@@ -38,7 +38,6 @@ function Shapes(props) {
             <SvgShape key={key} {...props} />
             ))
           }
-
           onClick={(event) => oneClick(event.eventObject, props)}
           onPointerOver={(event) => colorChange(event.object, props.isMember)}
           onPointerOut={(event) => revertColor(event.object, props.color)}

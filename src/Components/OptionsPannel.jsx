@@ -14,15 +14,16 @@ export default function OptionsPannel() {
   const setdFahr = useStore((state)=>state.setFahrChecked)
   let additionalOptions
 
-  const mainOptions = <div 
-    onChange={(v)=>{setOption(v.target.value)}}>
+  const mainOptions = <div>
     <label>Options: </label>
-    <select id="options">
-      <option value="General" defaultValue >General</option>
+    <select id="options" value={option}
+    onChange={(v)=>{setOption(v.target.value)}}>
+      <option value="General" >General</option>
       <option value="Weather" >Weather</option>
       <option value="Finance" >Finance</option>
     </select>
   </div>
+
   switch (option) {
     case 'General':
       additionalOptions = <div>

@@ -1,28 +1,23 @@
 import { celsiusToFahrenheit, kilometersTomiles } from '../Util/convertUnits'
-import { useState, useEffect, useMemo } from "react"
+import { useState, useMemo } from "react"
 import weatherCode from '../Util/weatherCodes'
+import fetchFunction from '../Util/fetchFunction'
 
 export default function WeatherInfo(props) {
   const [additionalInfo, setAdditionalInfo] = useState()
-  const [fahr, setFahr] = useState(props.fahr)
-  const [mph, setMph] = useState(props.mph)
-  const capital = props.capital
-  const capitalLat = props.latlng[0]
-  const capitalLng = props.latlng[1]
-  const fetchLink = `https://api.open-meteo.com/v1/forecast?latitude=${capitalLat}&longitude=${capitalLng}&timezone=Europe%2FLondon&current_weather=true`
- 
-  useMemo(()=>{
-    fetch(fetchLink)
-      .then(res=>res.json())
-      .then(json=>{
-        setAdditionalInfo(json)
-      })
-  }, [fetchLink])
+  const country = props.country
+  const fahr = props.fahr
+  const mph = props.mph
+  const capital = country.capital
+  const lat = country.latlng[0]
+  const lng = country.latlng[1]
+  const fetchLink = 
+  `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&timezone=Europe%2FLondon&current_weather=true`
 
-  useEffect(() => {
-    setFahr(props.fahr)
-    setMph(props.mph)
-  }, [props.fahr, props.mph])
+ 
+  useMemo(async ()=>{
+    setAdditionalInfo(await fetchFunction(fetchLink))
+  }, [fetchLink])
 
   const displayFunc=()=>{
     const weatherInfo = <>

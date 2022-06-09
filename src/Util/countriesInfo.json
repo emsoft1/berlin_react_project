@@ -5,7 +5,9 @@
     "color": "0x309030",
     "svg": "./countriesSvgs/Denmark.svg",
     "flag": "./flags/Flag_of_Denmark.svg",
-    "code": "DEN"
+    "code": "DEN",
+    "capital": "Copenhagen",
+    "latlng": [55.43, 12.34]
   },
   {
     "name": "Moldova",
@@ -13,7 +15,9 @@
     "color": "0x006000",
     "svg": "./countriesSvgs/Moldova.svg",
     "flag": "./flags/Flag_of_Moldova.svg",
-    "code": "MDA"
+    "code": "MDA",
+    "capital": "Chisinau",
+    "latlng": [47.0, 28.55]
   },
   {
     "name": "Romania",
@@ -21,7 +25,9 @@
     "color": "0xC07000",
     "svg": "./countriesSvgs/Romania.svg",
     "flag": "./flags/Flag_of_Romania.svg",
-    "code": "ROU"
+    "code": "ROU",
+    "capital": "Bucharest",
+    "latlng": [44.25, 26.06]
   },
   {
     "name": "Bulgaria",
@@ -29,7 +35,9 @@
     "color": "0xA080C0",
     "svg": "./countriesSvgs/Bulgaria.svg",
     "flag": "./flags/Flag_of_Bulgaria.svg",
-    "code": "BUL"
+    "code": "BUL",
+    "capital": "Sofia",
+    "latlng": [42.41, 23.19]
   },
   {
     "name": "North Macedonia",
@@ -37,7 +45,9 @@
     "color": "0xA050C0",
     "svg": "./countriesSvgs/Macedonia.svg",
     "flag": "./flags/Flag_of_North_Macedonia.svg",
-    "code": "MKD"
+    "code": "MKD",
+    "capital": "Skopje",
+    "latlng": [42.0, 21.26]
   },
   {
     "name": "Albania",
@@ -45,7 +55,9 @@
     "color": "0xE090C0",
     "svg": "./countriesSvgs/Albania.svg",
     "flag": "./flags/Flag_of_Albania.svg",
-    "code": "ALB"
+    "code": "ALB",
+    "capital": "Tirana",
+    "latlng": [41.19, 19.49]
   },
   {
     "name": "Serbia",
@@ -53,15 +65,19 @@
     "color": "0x50A090",
     "svg": "./countriesSvgs/Yugoslavia.svg",
     "flag": "./flags/Flag_of_Serbia_and_Montenegro.svg",
-    "code": "SRB"
+    "code": "SRB",
+    "capital": "Belgrade",
+    "latlng": [44.48, 20.28]
   },
   {
-    "name": "Bosnia & Hertegovina",
+    "name": "Bosnia & Herzegovina",
     "euMember": false,
     "color": "0xC06040",
     "svg": "./countriesSvgs/Bosnia&Hertecovina.svg",
     "flag": "./flags/Flag_of_Bosnia_and_Herzegovina.svg",
-    "code": "BIH"
+    "code": "BIH",
+    "capital": "Sarajevo",
+    "latlng": [43.52, 18.25]
   },
   {
     "name": "Croatia",
@@ -69,7 +85,9 @@
     "color": "0xC08080",
     "svg": "./countriesSvgs/Croatia.svg",
     "flag": "./flags/Flag_of_Croatia.svg",
-    "code": "CRO"
+    "code": "CRO",
+    "capital": "Zagreb",
+    "latlng": [45.48, 16.0]
   },
   {
     "name": "Slovenia",
@@ -77,7 +95,9 @@
     "color": "0x907090",
     "svg": "./countriesSvgs/Slovenia.svg",
     "flag": "./flags/Flag_of_Slovenia.svg",
-    "code": "SLO"
+    "code": "SLO",
+    "capital": "Ljubljana",
+    "latlng": [46.03, 14.30]
   },
   {
     "name": "Hungary",
@@ -85,7 +105,9 @@
     "color": "0x60E040",
     "svg": "./countriesSvgs/Hungary.svg",
     "flag": "./flags/Flag_of_Hungary.svg",
-    "code": "HUN"
+    "code": "HUN",
+    "capital": "Budapest",
+    "latlng": [47.26, 19.15]
   },
   {
     "name": "Slovakia",
@@ -93,7 +115,9 @@
     "color": "0xC070C0",
     "svg": "./countriesSvgs/Slovakia.svg",
     "flag": "./flags/Flag_of_Slovakia.svg",
-    "code": "SVK"
+    "code": "SVK",
+    "capital": "Bratislava",
+    "latlng": [48.09, 17.07]
   },
   {
     "name": "Ukraine",
@@ -101,7 +125,9 @@
     "color": "0x5050C0",
     "svg": "./countriesSvgs/Ukraine.svg",
     "flag": "./flags/Flag_of_Ukraine.svg",
-    "code": "UKR"
+    "code": "UKR",
+    "capital": "Kyiv",
+    "latlng": [49, 32]
   },
   {
     "name": "Poland",
@@ -109,7 +135,9 @@
     "color": "0x4060A5",
     "svg": "./countriesSvgs/Poland.svg",
     "flag": "./flags/Flag_of_Poland.svg",
-    "code": "POL"
+    "code": "POL",
+    "capital": "Warsaw",
+    "latlng": [52.13, 21.02]
   },
   {
     "name": "Lithuania",
@@ -117,7 +145,9 @@
     "color": "0x508005",
     "svg": "./countriesSvgs/Lithuania.svg",
     "flag": "./flags/Flag_of_Lithuania.svg",
-    "code": "LTU"
+    "code": "LTU",
+    "capital": "Vilnius",
+    "latlng": [54.41, 25.19]
   },
   {
     "name": "Latvia",
@@ -125,7 +155,9 @@
     "color": "0xA08585",
     "svg": "./countriesSvgs/Latvia.svg",
     "flag": "./flags/Flag_of_Latvia.svg",
-    "code": "LAT"
+    "code": "LAT",
+    "capital": "Riga",
+    "latlng": [56.57, 24.6]
   },
   {
     "name": "Czech Republic",
@@ -133,7 +165,9 @@
     "color": "0xA09050",
     "svg": "./countriesSvgs/Czech.svg",
     "flag": "./flags/Flag_of_the_Czech_Republic.svg",
-    "code": "CZE"
+    "code": "CZE",
+    "capital": "Prague",
+    "latlng": [50.05, 17.28]
   },
   {
     "name": "Germany",
@@ -141,7 +175,9 @@
     "color": "0x50A050",
     "svg": "./countriesSvgs/Germany.svg",
     "flag": "./flags/Flag_of_Germany.svg",
-    "code": "GER"
+    "code": "GER",
+    "capital": "Berlin",
+    "latlng": [52.31, 13.23]
   },
   {
     "name": "Austria",
@@ -149,7 +185,9 @@
     "color": "0xA05050",
     "svg": "./countriesSvgs/Austria.svg",
     "flag": "./flags/Flag_of_Austria.svg",
-    "code": "AUT"
+    "code": "AUT",
+    "capital": "Vienna",
+    "latlng": [28.12, 16.21]
   },
   {
     "name": "Switzerland",
@@ -157,7 +195,9 @@
     "color": "0x5050A0",
     "svg": "./countriesSvgs/Switzerland.svg",
     "flag": "./flags/Flag_of_Switzerland.svg",
-    "code": "SUI"
+    "code": "SUI",
+    "capital": "Bern",
+    "latlng": [46.57, 7.27]
   },
   {
     "name": "Italy",
@@ -165,7 +205,9 @@
     "color": "0xA050A0",
     "svg": "./countriesSvgs/Italy.svg",
     "flag": "./flags/Flag_of_Italy.svg",
-    "code": "ITA"
+    "code": "ITA",
+    "capital": "Rome",
+    "latlng": [41.54, 12.29]
   },
   {
     "name": "France",
@@ -173,7 +215,9 @@
     "color": "0xF0A050",
     "svg": "./countriesSvgs/France.svg",
     "flag": "./flags/Flag_of_France.svg",
-    "code": "FRA"
+    "code": "FRA",
+    "capital": "Paris",
+    "latlng": [48.51, 2.21]
   },
   {
     "name": "Spain",
@@ -181,7 +225,9 @@
     "color": "0x50A0f0",
     "svg": "./countriesSvgs/Spain.svg",
     "flag": "./flags/Flag_of_Spain.svg",
-    "code": "ESP"
+    "code": "ESP",
+    "capital": "Madrid",
+    "latlng": [40.26, 3.42]
   },
   {
     "name": "Portugal",
@@ -189,7 +235,9 @@
     "color": "0xF0A0F0",
     "svg": "./countriesSvgs/Portugal.svg",
     "flag": "./flags/Flag_of_Portugal.svg",
-    "code": "POR"
+    "code": "POR",
+    "capital": "Lisbon",
+    "latlng": [38.46, 9.9]
   },
   {
     "name": "Belgium",
@@ -197,7 +245,9 @@
     "color": "0x707000",
     "svg": "./countriesSvgs/Belgium.svg",
     "flag": "./flags/Flag_of_Belgium.svg",
-    "code": "BEL"
+    "code": "BEL",
+    "capital": "Brussels",
+    "latlng": [50.51, 4.21]
   },
   {
     "name": "Netherlands",
@@ -205,7 +255,9 @@
     "color": "0x505050",
     "svg": "./countriesSvgs/Netherlands.svg",
     "flag": "./flags/Flag_of_the_Netherlands.svg",
-    "code": "NED"
+    "code": "NED",
+    "capital": "Amsterdam",
+    "latlng": [52.22, 4.53]
   },
   {
     "name": "Estonia",
@@ -213,7 +265,9 @@
     "color": "0x808000",
     "svg": "./countriesSvgs/Estonia.svg",
     "flag": "./flags/Flag_of_Estonia.svg",
-    "code": "EST"
+    "code": "EST",
+    "capital": "Talinn",
+    "latlng": [59.25, 24.45]
   },
   {
     "name": "Finland",
@@ -221,7 +275,9 @@
     "color": "0xA070F0",
     "svg": "./countriesSvgs/Finland.svg",
     "flag": "./flags/Flag_of_Finland.svg",
-    "code": "FIN"
+    "code": "FIN",
+    "capital": "Helsinki",
+    "latlng": [60.10, 24.56]
   },
   {
     "name": "Sweden",
@@ -229,7 +285,9 @@
     "color": "0x80B0A0",
     "svg": "./countriesSvgs/Sweden.svg",
     "flag": "./flags/Flag_of_Sweden.svg",
-    "code": "SWE"
+    "code": "SWE",
+    "capital": "Stockholm",
+    "latlng": [59.21, 18.4]
   },
   {
     "name": "Norway",
@@ -237,7 +295,9 @@
     "color": "0x8090A0",
     "svg": "./countriesSvgs/Norway.svg",
     "flag": "./flags/Flag_of_Norway.svg",
-    "code": "NOR"
+    "code": "NOR",
+    "capital": "Oslo",
+    "latlng": [59.56, 10.41]
   },
   {
     "name": "Ireland",
@@ -245,7 +305,9 @@
     "color": "0xA080C0",
     "svg": "./countriesSvgs/Ireland.svg",
     "flag": "./flags/Flag_of_Ireland.svg",
-    "code": "irl"
+    "code": "irl",
+    "capital": "Dublin",
+    "latlng": [53.20, 6.16]
   },
   {
     "name": "United Kingdom",
@@ -253,7 +315,9 @@
     "color": "0xC08080",
     "svg": "./countriesSvgs/England.svg",
     "flag": "./flags/Flag_of_the_United_Kingdom.svg",
-    "code": "GBR"
+    "code": "GBR",
+    "capital": "London",
+    "latlng": [51.30, 0.7]
   },
   {
     "name": "Iceland",
@@ -261,7 +325,9 @@
     "color": "0xA0A0F0",
     "svg": "./countriesSvgs/Iceland.svg",
     "flag": "./flags/Flag_of_Iceland.svg",
-    "code": "ISL"
+    "code": "ISL",
+    "capital": "Reykjavík",
+    "latlng": [46.08, 21.56]
   },
   {
     "name": "Cyprus",
@@ -269,7 +335,9 @@
     "color": "0xE07000",
     "svg": "./countriesSvgs/Cyprus.svg",
     "flag": "./flags/Flag_of_Cyprus.svg",
-    "code": "CYP"
+    "code": "CYP",
+    "capital": "Nicosia",
+    "latlng": [35.10, 33.22]
   },
   {
     "name": "Greece",
@@ -277,7 +345,9 @@
     "color": "0xD07070",
     "svg": "./countriesSvgs/Greece.svg",
     "flag": "./flags/Flag_of_Greece.svg",
-    "code": "GRE"
+    "code": "GRE",
+    "capital": "Athens",
+    "latlng": [37.58, 23.43]
   },
   {
     "name": "Montenegro",
@@ -285,6 +355,8 @@
     "color": "0x60D070",
     "svg": "./countriesSvgs/Montenegro.svg",
     "flag": "./flags/Flag_of_Montenegro.svg",
-    "code": "MNE"
+    "code": "MNE",
+    "capital": "Podgorica",
+    "latlng": [42.47, 19.28]
   }
 ]
