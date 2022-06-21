@@ -1,8 +1,8 @@
 import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
-import {colorChange, revertColor} from '../Util/hoverFunction'
+import {colorChange, revertColor} from '../Util/HoverFunction'
 import { useLoader } from '@react-three/fiber'
 import React, { useRef, useMemo } from 'react'
-import oneClick from '../Util/onCountryClick'
+import oneClick from '../Util/OnCountryClick'
 import { Color } from 'three'
 
 function Shapes(props) {
